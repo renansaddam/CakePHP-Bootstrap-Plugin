@@ -67,7 +67,13 @@ class BootstrapFormHelper extends FormHelper {
 		if (!isset($options['after'])) {
 			$options['after'] = '';
 		}
+		//$options['after'] .= '</div>';
+		// add form tip
+		if(isset($options['tip'])){
+		$options['after'] .= '<p class="help-block">'.$options['tip'].'<p></div>';
+					}else{
 		$options['after'] .= '</div>';
+		}
 
 		if (isset($options['label']) && is_string($options['label'])) {
 			$options['label'] = array(
