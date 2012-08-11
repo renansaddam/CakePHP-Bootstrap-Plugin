@@ -1,7 +1,7 @@
 <?php
 App::uses('FormHelper', 'View/Helper');
 
-class BootstrapFormHelper extends FormHelper {
+class TwitterBootstrapFormHelper extends FormHelper {
 
 /**
  * Adds the class `form-horizontal` as its required by bootstrap
